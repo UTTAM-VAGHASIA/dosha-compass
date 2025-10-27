@@ -73,6 +73,7 @@ Refer to [`pubspec.yaml`](pubspec.yaml) for the full dependency list.
    - **Manage Flutter with FVM** (recommended when Flutter is missing or on a different version):
      ```powershell
      fvm install 3.35.7 -s
+     fvm use 3.35.7
      fvm flutter run -d windows
      ```
 
