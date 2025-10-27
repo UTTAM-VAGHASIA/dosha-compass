@@ -53,6 +53,15 @@ Refer to [`pubspec.yaml`](pubspec.yaml) for the full dependency list.
 
 ### Windows
 
+1. **One-step bootstrap script** (recommended):
+   - From the repository root, run PowerShell as Administrator and execute:
+     ```powershell
+     .\windows-run.ps1
+     ```
+   - The script handles Chocolatey/FVM installation when missing, pins Flutter `3.35.7`, installs dependencies, and launches `fvm flutter run -d windows` automatically.
+
+OR
+
 1. **Install Chocolatey** (if not already installed):
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -77,13 +86,6 @@ Refer to [`pubspec.yaml`](pubspec.yaml) for the full dependency list.
      fvm use 3.35.7
      fvm flutter run -d windows
      ```
-
-4. **One-step bootstrap script** (recommended):
-   - From the repository root, run PowerShell as Administrator and execute:
-     ```powershell
-     .\windows-run.ps1
-     ```
-   - The script handles Chocolatey/FVM installation when missing, pins Flutter `3.35.7`, installs dependencies, and launches `fvm flutter run -d windows` automatically.
 
 ### macOS & Linux
 
